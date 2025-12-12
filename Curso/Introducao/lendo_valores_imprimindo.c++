@@ -12,6 +12,11 @@ int main(){
     cin >> c;
 
     soma = a + b + c;
-    cout << "Soma: " << soma;
+    cout << "Soma: " << soma << endl;
+
+    string nome;
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout << "Ola " << nome;
     return 0;
 }
