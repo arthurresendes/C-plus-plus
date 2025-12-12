@@ -18,9 +18,16 @@ int main(){
         matriz[i] = new int[coluna];
     }
 
+
     for(int i =1; i <= linha;i++){
         for(int j = 1; j <= coluna; j++){
-            matriz[i][j] = j;
+            cout << "Digite o valor " << "[" << i << "]" << "[" << j << "] " << ": ";
+            cin >> matriz[i][j];
+        }
+    }
+
+    for(int i =1; i <= linha;i++){
+        for(int j = 1; j <= coluna; j++){
             cout << "["<< matriz[i][j] << "] ";
         }
         cout << endl;
