@@ -6,6 +6,10 @@ class Pessoa {
 public:
     string nome;
     int idade;
+
+    void informacoes(){
+        cout << "Nome: " << nome << endl << "Idade: " << idade << " anos";
+    };
 };
 
 int main(){
@@ -13,6 +17,6 @@ int main(){
     Pessoa pessoa1;
     pessoa1.nome = "Arthur Resende";
     pessoa1.idade = 19;
-    cout << "Nome: " << pessoa1.nome << endl << "Idade: " << pessoa1.idade << " anos";
+    pessoa1.informacoes();
     return 0;
 }
